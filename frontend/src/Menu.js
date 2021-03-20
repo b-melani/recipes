@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 export default function Menu() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <ul className="navbar-nav mr-auto d-flex justify-content-around w-100">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light ">
+      <ul className="navbar-nav mr-auto p-0 d-flex justify-content-around w-100 menu">
         <li className="nav-item active">
           <NavLink
             className="nav-link font-weight-bold"
