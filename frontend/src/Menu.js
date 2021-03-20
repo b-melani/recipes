@@ -6,7 +6,7 @@ export default function Menu() {
         <nav>
             <ul>
                 <li>
-                    <NavLink to="receipes/all">
+                    <NavLink to="/receipes/all">
                         Minden recept
                     </NavLink>
                 </li>

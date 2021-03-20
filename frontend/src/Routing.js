@@ -1,11 +1,11 @@
 import React from "react"
 import {Switch, Route, Redirection} from "react-router-dom"
 
-function Routing() {
+export default function Routing() {
     return(
         <div>
             <Switch>
-                <Route path="reciepes/all">
+                <Route path="/reciepes/all">
                     <AllReceipes/>
                 </Route>
 
