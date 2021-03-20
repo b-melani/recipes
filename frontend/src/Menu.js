@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 export default function Menu() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light flex-wrap">
-      <ul className="navbar-nav mr-auto">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <ul className="navbar-nav mr-auto d-flex justify-content-around w-100">
         <li className="nav-item active">
           <NavLink
             className="nav-link font-weight-bold"
@@ -41,14 +41,31 @@ export default function Menu() {
             Reggelik
           </NavLink>
         </li>
-        <li className="nav-item active">
+
+        <li className="nav-item dropdown show active ">
           <NavLink
-            className="nav-link font-weight-bold"
+            className="nav-link dropdown-toggle font-weight-bold show"
+            id="myDropdown"
+            data-toggle="dropdown"
             activeClassName="active"
             to="/seasonfoods"
           >
             Szezon ételek
           </NavLink>
+          <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <NavLink to="/all" className="dropdown-item">
+              Tavaszi ételek
+            </NavLink>
+            <NavLink to="/all" className="dropdown-item">
+              Nyári ételek
+            </NavLink>
+            <NavLink to="/all" className="dropdown-item">
+              Őszi ételek
+            </NavLink>
+            <NavLink to="/all" className="dropdown-item">
+              Téli ételek
+            </NavLink>
+          </div>
         </li>
         <li className="nav-item active">
           <NavLink
