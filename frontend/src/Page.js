@@ -10,7 +10,7 @@ export default function Page() {
     <Router>
       <header>
         <Header />
-        <div>
+        <div className="text-center">
           <SlideShow />
         </div>
         <div className="col-12">
