@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom'
 
 export default function Menu() {
   return (
-    <nav>
-      <ul>
-        <li className="nav-item border border-white p-2">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light flex-wrap">
+      <ul className="navbar-nav mr-auto">
+        <li className="nav-item active">
           <NavLink
             className="nav-link font-weight-bold"
             activeClassName="active"
@@ -14,23 +14,59 @@ export default function Menu() {
             Minden recept
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/pasta">Tészták</NavLink>
+        <li className="nav-item active">
+          <NavLink
+            className="nav-link font-weight-bold"
+            activeClassName="active"
+            to="/pasta"
+          >
+            Tészták
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="/cookies">Sütemények</NavLink>
+        <li className="nav-item active">
+          <NavLink
+            className="nav-link font-weight-bold"
+            activeClassName="active"
+            to="/cookies"
+          >
+            Sütemények
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="/breakfast">Reggelik</NavLink>
+        <li className="nav-item active">
+          <NavLink
+            className="nav-link font-weight-bold"
+            activeClassName="active"
+            to="/breakfast"
+          >
+            Reggelik
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="/seasonfoods">Szezon ételek</NavLink>
+        <li className="nav-item active">
+          <NavLink
+            className="nav-link font-weight-bold"
+            activeClassName="active"
+            to="/seasonfoods"
+          >
+            Szezon ételek
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="/grill">Grill</NavLink>
+        <li className="nav-item active">
+          <NavLink
+            className="nav-link font-weight-bold"
+            activeClassName="active"
+            to="/grill"
+          >
+            Grill
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="/tips">+Tippek</NavLink>
+        <li className="nav-item active">
+          <NavLink
+            className="nav-link font-weight-bold"
+            activeClassName="active"
+            to="/tips"
+          >
+            +Tippek
+          </NavLink>
         </li>
       </ul>
     </nav>
