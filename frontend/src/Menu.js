@@ -53,16 +53,16 @@ export default function Menu() {
             Szezon ételek
           </NavLink>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <NavLink to="/all" className="dropdown-item">
+            <NavLink to="/seasonfoods/springfoods" className="dropdown-item">
               Tavaszi ételek
             </NavLink>
-            <NavLink to="/all" className="dropdown-item">
+            <NavLink to="/seasonfoods/summerfoods" className="dropdown-item">
               Nyári ételek
             </NavLink>
-            <NavLink to="/all" className="dropdown-item">
+            <NavLink to="/seasonfoods/autumnfoods" className="dropdown-item">
               Őszi ételek
             </NavLink>
-            <NavLink to="/all" className="dropdown-item">
+            <NavLink to="/seasonfoods/winterfoods" className="dropdown-item">
               Téli ételek
             </NavLink>
           </div>

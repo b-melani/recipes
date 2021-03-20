@@ -17,14 +17,26 @@ export default function Routing() {
         <Route path="/cookies">
           <Cookies />
         </Route>
-        <Route path="/seasonfoods">
-          <SeasonFoods />
-        </Route>
         <Route path="/grill">
           <Grill />
         </Route>
         <Route path="/tips">
           <Tips />
+        </Route>
+        <Route exact path="/seasonfoods/springfoods">
+          <SpringFoods />
+        </Route>
+        <Route exact path="/seasonfoods/summerfoods">
+          <SummerFoods />
+        </Route>
+        <Route exact path="/seasonfoods/autumnfoods">
+          <AutumnFoods />
+        </Route>
+        <Route exact path="/seasonfoods/winterfoods">
+          <WinterFoods />
+        </Route>
+        <Route path="/seasonfoods">
+          <SeasonFoods />
         </Route>
         <Route path="/">
           <Redirect to="/all" />
@@ -60,4 +72,20 @@ function Grill() {
 
 function Tips() {
   return <div>Tippek sütéshez, főzéshez</div>
+}
+
+function AutumnFoods() {
+  return <div>Őszi ételek</div>
+}
+
+function SpringFoods() {
+  return <div>Tavaszi ételek</div>
+}
+
+function SummerFoods() {
+  return <div>Nyári ételek</div>
+}
+
+function WinterFoods() {
+  return <div>Téli ételek</div>
 }
