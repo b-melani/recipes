@@ -4,6 +4,7 @@ import Routing from './Routing'
 import Menu from './Menu'
 import Header from './Header'
 import SlideShow from './SlideShow'
+import Recipes from './Recipes'
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
       </header>
       <main>
         <Routing />
+        <Recipes />
       </main>
     </Router>
   )
