@@ -1,20 +1,25 @@
 const express = require('express')
-const bodyParser = require('body-parser')
+// const bodyParser = require('body-parser')
 const app = express()
-const port = 3000
+const port = 3001
+//var path = require('path')
+//const router = express.Router()
+var cors = require('cors')
 
-// app.use(bodyParser.urlencoded({ extended: true }))
-// app.use(bodyParser.json())
+app.use(cors()) // Use this after the variable declaration
 
-app.get('http://localhost:3000/pasta', (req, res) => {
-  res.send(pastaRecipes)
+// app.use(express.urlencoded({ extended: true }))
+// app.use(express.json())
+
+app.get('/pasta', (req, res) => {
+  res.send(JSON.stringify(pastaRecipes))
 })
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-let pastaRecipes = {
+const pastaRecipes = {
   2: {
     id: '2',
     name: 'Baked Shrimp Scampi',
@@ -66,3 +71,7 @@ let pastaRecipes = {
     tags: ['fruit', 'dessert', 'strawberries', 'copycat', 'untried'],
   },
 }
+
+// app.get('/*', function (req, res) {
+//   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'))
+// })
