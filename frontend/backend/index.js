@@ -19,8 +19,8 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-const pastaRecipes = {
-  2: {
+const pastaRecipes = [
+  {
     id: '2',
     name: 'Baked Shrimp Scampi',
     source: 'Ina Garten: Barefoot Contessa Back to Basics',
@@ -49,8 +49,9 @@ const pastaRecipes = {
       '2 pound frozen shrimp',
     ],
     tags: ['seafood', 'shrimp', 'main'],
+    img: '../backend/images/cheesecake',
   },
-  4: {
+  {
     id: '4',
     name: 'Strawberries Romanov (La Madeleine copycat)',
     source:
@@ -69,9 +70,15 @@ const pastaRecipes = {
       '4 tbsp brandy',
     ],
     tags: ['fruit', 'dessert', 'strawberries', 'copycat', 'untried'],
+    img: '../backend/images/cheesecake',
   },
-}
+]
 
 // app.get('/*', function (req, res) {
 //   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'))
 // })
+
+{
+  /* `név: ${oneItem.name} \n hozzávalók: ${oneItem.ingredients} \n
+              elkészítés: ${oneItem.instructions} `{' '} */
+}
