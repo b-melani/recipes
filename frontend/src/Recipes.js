@@ -1,16 +1,16 @@
 import React from 'react'
-import usePasta from './hooks/usePasta'
+import useRecipe from './hooks/useRecipe'
 import OneRecipe from './OneRecipe'
 
 export default function Recipes() {
-  const { pasta } = usePasta()
-  console.log(pasta)
+  const { recipe } = useRecipe()
+  console.log(recipe)
 
   return (
     <>
-      {pasta ? (
+      {recipe ? (
         <div>
-          {pasta.map((oneItem) => (
+          {recipe.map((oneItem) => (
             // <div>
             //   <div className="d-flex">
             //     <div>
